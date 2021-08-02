@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\DEVELOP\\ecovat-service\\ecovat-service\\ecovat-service\\ecovat-service.csproj": {}
+    "C:\\DEVELOP\\ecovat-service\\ecovat-service\\ecovat-service.csproj": {}
   },
   "projects": {
-    "C:\\DEVELOP\\ecovat-service\\ecovat-service\\ecovat-service\\ecovat-service.csproj": {
+    "C:\\DEVELOP\\ecovat-service\\ecovat-service\\ecovat-service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\DEVELOP\\ecovat-service\\ecovat-service\\ecovat-service\\ecovat-service.csproj",
+        "projectUniqueName": "C:\\DEVELOP\\ecovat-service\\ecovat-service\\ecovat-service.csproj",
         "projectName": "ecovat-service",
-        "projectPath": "C:\\DEVELOP\\ecovat-service\\ecovat-service\\ecovat-service\\ecovat-service.csproj",
+        "projectPath": "C:\\DEVELOP\\ecovat-service\\ecovat-service\\ecovat-service.csproj",
         "packagesPath": "C:\\Users\\DA\\.nuget\\packages\\",
-        "outputPath": "C:\\DEVELOP\\ecovat-service\\ecovat-service\\ecovat-service\\obj\\",
+        "outputPath": "C:\\DEVELOP\\ecovat-service\\ecovat-service\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\DA\\AppData\\Roaming\\NuGet\\NuGet.Config"
