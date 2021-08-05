@@ -8,7 +8,8 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\DA\\.nuget\\packages\\": {}
+    "C:\\Users\\anton.drozdov\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
@@ -16,16 +17,24 @@
       "projectUniqueName": "C:\\DEVELOP\\ecovat-service\\ecovat-service\\ecovat-service.csproj",
       "projectName": "ecovat-service",
       "projectPath": "C:\\DEVELOP\\ecovat-service\\ecovat-service\\ecovat-service.csproj",
-      "packagesPath": "C:\\Users\\DA\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\anton.drozdov\\.nuget\\packages\\",
       "outputPath": "C:\\DEVELOP\\ecovat-service\\ecovat-service\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\DA\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\anton.drozdov\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "http://btlteamcity.saltswharf.btl.com:7990/NuGetServer/nuget": {},
+        "http://btlteamcity.saltswharf.btl.com:8080/guestAuth/app/nuget/v1/FeedService.svc/": {},
+        "http://btlteamcity.saltswharf.btl.com:8080/httpAuth/app/nuget/v1/FeedService.svc": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -61,7 +70,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
