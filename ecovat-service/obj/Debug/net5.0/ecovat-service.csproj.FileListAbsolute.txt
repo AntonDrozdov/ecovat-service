@@ -37,5 +37,5 @@ C:\DEVELOP\ecovat-service\ecovat-service\obj\Debug\net5.0\ref\ecovat-service.dll
 C:\DEVELOP\ecovat-service\ecovat-service\obj\Debug\net5.0\ecovat-service.pdb
 C:\DEVELOP\ecovat-service\ecovat-service\obj\Debug\net5.0\ecovat-service.genruntimeconfig.cache
 C:\DEVELOP\ecovat-service\ecovat-service\obj\Debug\net5.0\ecovat-service.csproj.CopyComplete
-C:\DEVELOP\ecovat-service\ecovat-service\obj\Debug\net5.0\ecovat-service.csprojAssemblyReference.cache
 C:\DEVELOP\ecovat-service\ecovat-service\bin\Debug\net5.0\wwwroot\lib\favicon.ico
+C:\DEVELOP\ecovat-service\ecovat-service\obj\Debug\net5.0\ecovat-service.csproj.AssemblyReference.cache
