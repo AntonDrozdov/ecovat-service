@@ -7,6 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\images\marketing\bestprice.png" />
+    <Content Remove="wwwroot\images\marketing\experience.jpg" />
+    <Content Remove="wwwroot\images\marketing\guarantee.jpg" />
+    <Content Remove="wwwroot\images\marketing\licensed.jpg" />
+    <Content Remove="wwwroot\images\marketing\licensed.png" />
+    <Content Remove="wwwroot\images\marketing\offer.png" />
     <Content Remove="wwwroot\lib\favicon.ico" />
   </ItemGroup>
 
