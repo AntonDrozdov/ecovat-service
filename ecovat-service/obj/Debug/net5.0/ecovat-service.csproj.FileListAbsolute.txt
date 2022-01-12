@@ -79,3 +79,4 @@ C:\!DEVELOP\Ecovat-Service\ecovat-service\bin\Debug\net5.0\ecovat-service.Views.
 C:\!DEVELOP\Ecovat-Service\ecovat-service\obj\Debug\net5.0\ecovat-service.Views.pdb
 C:\!DEVELOP\Ecovat-Service\ecovat-service\obj\Debug\net5.0\ecovat-service.genruntimeconfig.cache
 C:\!DEVELOP\Ecovat-Service\ecovat-service\obj\Debug\net5.0\ecovat-service.csproj.CopyComplete
+C:\!DEVELOP\Ecovat-Service\ecovat-service\obj\Debug\net5.0\ecovat-service.csproj.AssemblyReference.cache
