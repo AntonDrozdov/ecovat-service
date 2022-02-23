@@ -16,8 +16,8 @@ a.navbar-brand {
 }
 
 .header-contacts {
-    border: 3px solid #6c757d;
-    border-radius: 5px;
+/*    border: 3px solid #6c757d;
+    border-radius: 5px;*/
     padding:1em;
     display: flex;
     flex-direction: column;
