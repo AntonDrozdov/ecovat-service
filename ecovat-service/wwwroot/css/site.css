@@ -1,24 +1,10 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
-.navbar-brand {
-    margin-left: 0rem;
-}
-
-.navbar-brand img {
-    max-width: 200px;
-}
-
-a.navbar-brand {
-    white-space: normal;
-    text-align: center;
-    word-break: break-all;
-}
-
 .header-contacts {
-/*    border: 3px solid #6c757d;
+    /*    border: 3px solid #6c757d;
     border-radius: 5px;*/
-    padding:1em;
+    padding: 1em;
     display: flex;
     flex-direction: column;
 }
@@ -32,6 +18,20 @@ a.navbar-brand {
     padding-top: 10px;
     text-align: center;
     font-weight: 600;
+}
+
+.navbar-brand {
+    margin-left: 0rem;
+}
+
+.navbar-brand img {
+    max-width: 200px;
+}
+
+a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
 }
 
 .footer-data {
@@ -166,7 +166,7 @@ button.accept-policy {
 /*carousel*/
 .carousel {
     margin: 0 auto;
-    margin-bottom: 4rem;
+    margin-bottom: 0.2rem;
 }
 
 .carousel-caption {
@@ -251,9 +251,40 @@ button.accept-policy {
     max-width: 100%;  
     max-height:320px;
 }
+.featurette {
+    align-items: center;
+}
 
 .featurette .col-md-5 {
+    align-items: center;
     text-align: center;
+}
+
+.feature-quickaccess {
+    margin:0.5rem 0rem 0.5rem 0rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    text-align: center;
+    align-items: flex-end;
+}
+
+.feature-quickaccess .feature-quickaccess-item {
+    padding: 1rem;
+    border-bottom: 1px solid #60c53f;
+    font-size: large;
+    font-weight: 600;
+    align-items: center;    
+    margin-bottom: calc(5px - 2px);
+}
+
+.short-word{
+    font-size: x-large !important;
+}
+
+.feature-quickaccess .feature-quickaccess-item:hover {
+    border-bottom: 3px solid #60c53f;
+    margin-bottom: calc(5px - 4px);
 }
 
 
