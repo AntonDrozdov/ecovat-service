@@ -49,6 +49,9 @@
     <!-- /Yandex.Metrika counter -->
 </head>
 <body>
+    @await Component.InvokeAsync("FeedbackForm")
+
+    <!--Header-->
     <header>
         <nav class="navbar navbar-expand-md navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
@@ -101,6 +104,8 @@
             </div>
         </nav>
     </header>
+
+    <!--Main part-->
     <div class="container">
         <main role="main" class="pb-3">
 
@@ -109,6 +114,7 @@
         </main>
     </div>
 
+    <!--Footer-->
     <div class="container">
         <footer class="container border-top footer text-muted">
             <div class="row">

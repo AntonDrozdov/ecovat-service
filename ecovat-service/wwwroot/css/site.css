@@ -59,11 +59,39 @@ a.navbar-brand {
 }
 
 .without-backgroundimage {
-background-image:none !important;
+    background-image:none !important;
 }
 
 .justify-content-center {
     justify-content:center;
+}
+
+.with-text-indent {
+    text-indent: 1.5em;
+}
+
+.text-align-center {
+    text-align:center;
+}
+
+.advatages {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+}
+
+.advatages h1 {
+    display: inline;
+}
+
+.advatages span {
+    font-size: 2rem;
+    margin-left: 10px;
+}
+
+.advatages img {
+    max-width: 80px;
 }
 
 .font-size-larger {
@@ -119,11 +147,11 @@ body {
     }
 
 .border-top {
-  border-top: 1px solid #e5e5e5;
+    border-top: 1px solid #60c53f !important;
 }
 
 .border-bottom {
-  border-bottom: 1px solid #e5e5e5;
+    border-bottom: 1px solid #60c53f!important;
 }
 
 .box-shadow {
@@ -208,6 +236,7 @@ button.accept-policy {
 
 /*features*/
 .featurette-divider {
+    color: #60c53f;
     margin: 2rem 0; /* Space out the Bootstrap <hr> more */
 }
 
