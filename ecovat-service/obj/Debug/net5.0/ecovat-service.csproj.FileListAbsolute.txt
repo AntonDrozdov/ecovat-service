@@ -5,7 +5,6 @@ C:\DEVELOP\ecovat-service\ecovat-service\bin\Debug\net5.0\ecovat-service.deps.js
 C:\DEVELOP\ecovat-service\ecovat-service\bin\Debug\net5.0\ecovat-service.runtimeconfig.json
 C:\DEVELOP\ecovat-service\ecovat-service\bin\Debug\net5.0\ecovat-service.runtimeconfig.dev.json
 C:\DEVELOP\ecovat-service\ecovat-service\bin\Debug\net5.0\ecovat-service.dll
-C:\DEVELOP\ecovat-service\ecovat-service\bin\Debug\net5.0\ref\ecovat-service.dll
 C:\DEVELOP\ecovat-service\ecovat-service\bin\Debug\net5.0\ecovat-service.pdb
 C:\DEVELOP\ecovat-service\ecovat-service\bin\Debug\net5.0\ecovat-service.Views.dll
 C:\DEVELOP\ecovat-service\ecovat-service\bin\Debug\net5.0\ecovat-service.Views.pdb
@@ -17,14 +16,11 @@ C:\DEVELOP\ecovat-service\ecovat-service\obj\Debug\net5.0\ecovat-service.MvcAppl
 C:\DEVELOP\ecovat-service\ecovat-service\obj\Debug\net5.0\ecovat-service.RazorAssemblyInfo.cache
 C:\DEVELOP\ecovat-service\ecovat-service\obj\Debug\net5.0\ecovat-service.RazorAssemblyInfo.cs
 C:\DEVELOP\ecovat-service\ecovat-service\obj\Debug\net5.0\staticwebassets\ecovat-service.StaticWebAssets.Manifest.cache
-C:\DEVELOP\ecovat-service\ecovat-service\obj\Debug\net5.0\staticwebassets\ecovat-service.StaticWebAssets.xml
 C:\DEVELOP\ecovat-service\ecovat-service\obj\Debug\net5.0\scopedcss\bundle\ecovat-service.styles.css
 C:\DEVELOP\ecovat-service\ecovat-service\obj\Debug\net5.0\ecovat-service.TagHelpers.input.cache
 C:\DEVELOP\ecovat-service\ecovat-service\obj\Debug\net5.0\ecovat-service.TagHelpers.output.cache
 C:\DEVELOP\ecovat-service\ecovat-service\obj\Debug\net5.0\ecovat-service.RazorCoreGenerate.cache
-C:\DEVELOP\ecovat-service\ecovat-service\obj\Debug\net5.0\Razor\Pages\Error.cshtml.g.cs
 C:\DEVELOP\ecovat-service\ecovat-service\obj\Debug\net5.0\Razor\Pages\Index.cshtml.g.cs
-C:\DEVELOP\ecovat-service\ecovat-service\obj\Debug\net5.0\Razor\Pages\Privacy.cshtml.g.cs
 C:\DEVELOP\ecovat-service\ecovat-service\obj\Debug\net5.0\Razor\Pages\Shared\_Layout.cshtml.g.cs
 C:\DEVELOP\ecovat-service\ecovat-service\obj\Debug\net5.0\Razor\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
 C:\DEVELOP\ecovat-service\ecovat-service\obj\Debug\net5.0\Razor\Pages\_ViewImports.cshtml.g.cs
@@ -80,3 +76,7 @@ C:\!DEVELOP\Ecovat-Service\ecovat-service\obj\Debug\net5.0\ecovat-service.Views.
 C:\!DEVELOP\Ecovat-Service\ecovat-service\obj\Debug\net5.0\ecovat-service.genruntimeconfig.cache
 C:\!DEVELOP\Ecovat-Service\ecovat-service\obj\Debug\net5.0\ecovat-service.csproj.CopyComplete
 C:\!DEVELOP\Ecovat-Service\ecovat-service\obj\Debug\net5.0\ecovat-service.csproj.AssemblyReference.cache
+C:\DEVELOP\ecovat-service\ecovat-service\obj\Debug\net5.0\Razor\Pages\Components\FeedbackForm\Default.cshtml.g.cs
+C:\DEVELOP\ecovat-service\ecovat-service\obj\Debug\net5.0\Razor\Pages\_notUsed_Error.cshtml.g.cs
+C:\DEVELOP\ecovat-service\ecovat-service\obj\Debug\net5.0\Razor\Pages\_notUsed_Privacy.cshtml.g.cs
+C:\DEVELOP\ecovat-service\ecovat-service\obj\Debug\net5.0\refint\ecovat-service.dll

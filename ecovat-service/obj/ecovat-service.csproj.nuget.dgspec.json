@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\!DEVELOP\\Ecovat-Service\\ecovat-service\\ecovat-service.csproj": {}
+    "C:\\DEVELOP\\ecovat-service\\ecovat-service\\ecovat-service.csproj": {}
   },
   "projects": {
-    "C:\\!DEVELOP\\Ecovat-Service\\ecovat-service\\ecovat-service.csproj": {
+    "C:\\DEVELOP\\ecovat-service\\ecovat-service\\ecovat-service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\!DEVELOP\\Ecovat-Service\\ecovat-service\\ecovat-service.csproj",
+        "projectUniqueName": "C:\\DEVELOP\\ecovat-service\\ecovat-service\\ecovat-service.csproj",
         "projectName": "ecovat-service",
-        "projectPath": "C:\\!DEVELOP\\Ecovat-Service\\ecovat-service\\ecovat-service.csproj",
-        "packagesPath": "C:\\Users\\anton.drozdov\\.nuget\\packages\\",
-        "outputPath": "C:\\!DEVELOP\\Ecovat-Service\\ecovat-service\\obj\\",
+        "projectPath": "C:\\DEVELOP\\ecovat-service\\ecovat-service\\ecovat-service.csproj",
+        "packagesPath": "C:\\Users\\bell\\.nuget\\packages\\",
+        "outputPath": "C:\\DEVELOP\\ecovat-service\\ecovat-service\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\anton.drozdov\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\bell\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -25,11 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "http://btlteamcity.saltswharf.btl.com:7990/NuGetServer/nuget": {},
-          "http://btlteamcity.saltswharf.btl.com:8080/guestAuth/app/nuget/v1/FeedService.svc/": {},
-          "http://btlteamcity.saltswharf.btl.com:8080/httpAuth/app/nuget/v1/FeedService.svc": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nuget.devexpress.com/3KAJTXBP2LBh7S8gSeGugjBWrR9o4qO8BDFU1tVh1aN5njYBAA/api": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
@@ -64,7 +57,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
