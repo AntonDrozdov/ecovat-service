@@ -55,30 +55,86 @@
     <header>
         <nav class="navbar navbar-expand-md navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
+
+                
+                
                 <a class="navbar-brand" asp-area="" asp-page="/Index">
                     <img src="~/images/logos/web_logo_top.png" alt="Эковат-Сервис"/>
                 </a>
-                @*<button class="navbar-toggler"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#headerMenu"
-                            aria-controls="navbarSupportedContent"
-                            aria-expanded="false"
-                            aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="navbar-collapse collapse" id="headerMenu">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link text-dark active" asp-area="" asp-page="/Index">Главная</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Контакты</a>
-                            </li>
-                        </ul>
-                    </div>*@
 
-                <button class="navbar-toggler"
+                <div class="toggled-btns">
+@*                    <button class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#headerMainMenu"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>*@
+                    <button class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target=""
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon without-backgroundimage">
+                            <i class="fa-solid fa-phone font-size-larger"></i>
+                        </span>
+                    </button>
+                    <button class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target=""
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon without-backgroundimage">
+                            <i class="fa-solid fa-envelope font-size-larger"></i>
+                        </span>
+                    </button>
+                </div>
+
+
+@*                <div class="navbar-collapse collapse" id="headerMainMenu">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark active" asp-area="" asp-page="/Index">Главная</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Контакты</a>
+                        </li>
+                    </ul>
+                </div>*@
+
+
+                <div class="d-none d-md-block">
+                    <div class="header-contacts-wrapper d-none d-lg-block">
+                        <div class="header-contacts-icon-block">
+                            <span class="navbar-toggler-icon header-contacts-icon without-backgroundimage ">
+                                <i class="fa-solid fa-phone font-size-larger"></i>
+                            </span>
+                        </div>
+                        <div class="header-contacts">
+                            <div class="header-contacts-tel font-size-larger">+7(931)004 86 70</div>
+                            <div class="header-contacts-tel font-size-larger">+7(812)934 41 44</div>
+                        </div>
+                        <div class="header-contacts-icon-block">
+                            <span class="navbar-toggler-icon header-contacts-icon without-backgroundimage">
+                                <i class="fa-solid fa-envelope font-size-larger"></i>
+                            </span>
+                        </div>
+                        <div class="header-contacts">
+                            <div class="header-contacts-mail font-size-larger">mail@ecovat-service.ru</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+                @* <button class="navbar-toggler"
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#headerTels"
@@ -97,29 +153,13 @@
                                 <div class="header-contacts-tel font-size-larger">+7(812)934 41 44</div>
                             </div>
                         </li>
-                    </ul>
-                </div>
-
-                <button class="navbar-toggler"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#feedbackForm"
-                        aria-controls="navbarSupportedContent"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon without-backgroundimage">
-                            <i class="fa-solid fa-phone font-size-larger"></i>
-                        </span>
-                </button>
-                <div class="navbar-collapse collapse navbar-header-contacts" id="feedbackForm">
-                    <ul class="navbar-nav">
                         <li class="nav-item">
                             <div class="header-contacts">
                                 <div class="header-contacts-mail font-size-larger">mail@ecovat-service.ru</div>
                             </div>
                         </li>
                     </ul>
-                </div>
+                </div>*@
             </div>
         </nav>
     </header>

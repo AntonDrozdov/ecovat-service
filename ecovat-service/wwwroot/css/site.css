@@ -1,10 +1,17 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
+
+.header-contacts-wrapper {
+    align-items:center;
+    display: flex !important;
+    flex-direction: row !important;
+}
+
 .header-contacts {
     /*    border: 3px solid #6c757d;
     border-radius: 5px;*/
-    padding: 1em;
+    padding: 1em 2em 1em 1em;
     display: flex;
     flex-direction: column;
 }
@@ -15,9 +22,18 @@ for details on configuring this project to bundle and minify static web assets. 
 }
 
 .header-contacts .header-contacts-mail {
-    padding-top: 10px;
     text-align: center;
     font-weight: 600;
+}
+
+.header-contacts-icon-block {
+    display:table;
+}
+.header-contacts-icon {
+    text-align: end;
+    font-size: xx-large;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 .navbar-brand {
@@ -25,13 +41,17 @@ for details on configuring this project to bundle and minify static web assets. 
 }
 
 .navbar-brand img {
-    max-width: 200px;
+    max-width: 370px;
 }
 
 a.navbar-brand {
     white-space: normal;
     text-align: center;
     word-break: break-all;
+}
+
+.navbar-toggler-icon > i {
+    padding-top: 5px;
 }
 
 .footer-data {
@@ -96,6 +116,23 @@ a.navbar-brand {
 
 .font-size-larger {
     font-size: x-large;
+}
+
+@media (max-width: 1024px) {
+
+
+    .navbar-brand img {
+        max-width: 270px;
+    }
+}
+
+@media (max-width: 768px) {
+    .font-size-larger {
+        font-size: unset;
+    }
+    .navbar-brand img {
+        max-width: 170px;
+    }
 }
 
 a {
