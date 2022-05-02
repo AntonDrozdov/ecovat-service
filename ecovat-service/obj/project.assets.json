@@ -8,7 +8,7 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\bell\\.nuget\\packages\\": {}
+    "C:\\Users\\anton\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -16,11 +16,11 @@
       "projectUniqueName": "C:\\DEVELOP\\ecovat-service\\ecovat-service\\ecovat-service.csproj",
       "projectName": "ecovat-service",
       "projectPath": "C:\\DEVELOP\\ecovat-service\\ecovat-service\\ecovat-service.csproj",
-      "packagesPath": "C:\\Users\\bell\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\anton\\.nuget\\packages\\",
       "outputPath": "C:\\DEVELOP\\ecovat-service\\ecovat-service\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\bell\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\anton\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -28,7 +28,9 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://artifactory.akbars.tech/artifactory/api/nuget/nuget": {},
+        "https://artifactory.akbars.tech/artifactory/api/nuget/v3/nuget": {}
       },
       "frameworks": {
         "net5.0": {
@@ -63,7 +65,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
