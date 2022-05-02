@@ -307,6 +307,9 @@ button.accept-policy {
 }
 
 .feature-quickaccess .feature-quickaccess-item {
+    display: block;
+    text-decoration: none;
+    color: inherit;
     padding: 1rem;
     border-bottom: 1px solid #60c53f;
     font-size: large;
