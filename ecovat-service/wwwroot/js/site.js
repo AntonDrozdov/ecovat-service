@@ -4,7 +4,8 @@
     //});
 
     $('#askQuestionIcon').on('click', function () {
-        showFeedbackForm();
+        //showFeedbackForm();
+        $('#testModal').modal({ backdrop: 'static', keyboard: false });
     });
 
     showFeedbackForm = function () {
