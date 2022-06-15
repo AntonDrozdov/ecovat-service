@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31205.134
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32414.318
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ecovat-service", "ecovat-service.csproj", "{6DE59763-B1BE-483B-B2AF-D0CB48EA837A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ecovat-service.web", "ecovat-service.web.csproj", "{6DE59763-B1BE-483B-B2AF-D0CB48EA837A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ecovat-service.businessLogic", "..\ecova-service.businessLogic\ecovat-service.businessLogic.csproj", "{99DB6E2F-4C68-4239-BE06-9EC8D9B4988E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{6DE59763-B1BE-483B-B2AF-D0CB48EA837A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6DE59763-B1BE-483B-B2AF-D0CB48EA837A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6DE59763-B1BE-483B-B2AF-D0CB48EA837A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99DB6E2F-4C68-4239-BE06-9EC8D9B4988E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99DB6E2F-4C68-4239-BE06-9EC8D9B4988E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99DB6E2F-4C68-4239-BE06-9EC8D9B4988E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99DB6E2F-4C68-4239-BE06-9EC8D9B4988E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

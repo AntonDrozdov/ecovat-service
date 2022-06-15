@@ -1,13 +1,11 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using ecovat_service.businessLogic.Interfaces;
+using ecovat_service.businessLogic.Services;
+using ecovat_service.businessLogic.Models;
 
 namespace ecovat_service
 {
@@ -24,6 +22,14 @@ namespace ecovat_service
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+
+            services.AddOptions();
+
+            services.Configure<EmailServiceSettings>(Configuration.GetSection("EmailServiceSettings"));
+
+            services.AddTransient<IEmailService, EmailService>();
+            services.AddTransient<ISmtpClientFactory, SmtpClientFactory>();
+            services.AddTransient<IValidationService, ValidationService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

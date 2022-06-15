@@ -36,6 +36,26 @@ for details on configuring this project to bundle and minify static web assets. 
     vertical-align: middle;
 }
 
+.header-contacts-btn-icon {
+    font-size: 32px;
+    margin: 0px 6px 0px 0px;
+}
+.header-contacts-btn-text {
+    margin: 9px 0px 0px 0px;
+}
+
+.header-contacts-btn {
+    padding: 0px 6px 0px 6px;
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
+    font-weight: 600;
+    font-size: larger;
+    color: #5a5a5a !important;
+    background-color: #ffffff !important;
+    border: 3px solid #60c53f !important;
+}
+
 .navbar-brand {
     margin-left: 0rem;
 }
@@ -119,7 +139,9 @@ a.navbar-brand {
 }
 
 @media (max-width: 1024px) {
-
+    .font-size-larger {
+        font-size: larger;
+    }
 
     .navbar-brand img {
         max-width: 270px;

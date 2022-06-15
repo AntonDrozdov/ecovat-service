@@ -5,14 +5,13 @@
 
     $('#askQuestionIcon').on('click', function () {
         //showFeedbackForm();
-        $('#testModal').modal({ backdrop: 'static', keyboard: false });
+        //$('#exampleModal').modal({ show:'true', backdrop: 'static', keyboard: false });
     });
 
     showFeedbackForm = function () {
-        $("#formfeedbackInputs-successPost").hide();
-        $("#formfeedbackInputs-failPost").hide();
-        $("#formfeedbackInputs").show();
-        $('#feedbackForm').modal({ backdrop: 'static', keyboard: false });
+        $("#ecovat-formfeedbackInputs-successPost").hide();
+        $("#ecovat-formfeedbackInputs-failPost").hide();
+        $("#ecovat-formfeedbackInputs").show();
     };
 
     $("#kc-feedbackForm-validatePart").submit(function (event) {
@@ -21,11 +20,22 @@
 
     sendFeedbackForm = function () {
 
-        if (!validateFeedbackForm()) {
+        var isValid = validateFeedbackForm();
+        if (!isValid) {
             return;
         }
 
-        var formData = new FormData($("form").get(0));
+        //var formData = new FormData($("form").get(0));
+        var formData = new FormData();        
+        formData.append("Name", $('#ecovat-feedbackName').val());
+        formData.append("Phone", $('#ecovat-feedbackPhone').val());
+        formData.append("Email", $('#ecovat-feedbackEmail').val());
+        formData.append("Message", $('#ecovat-feedbackMessage').val());
+
+        //var request = new XMLHttpRequest();
+        //request.open("POST", "FeedbackForm/FeedbackForm");
+        
+        //request.send(formData);
 
         $.ajax({
             type: 'POST',
@@ -34,6 +44,10 @@
             data: formData,
             dataType: 'json',
             contentType: false,
+            headers:
+            {
+                "RequestVerificationToken": $('input:hidden[name="__RequestVerificationToken"]').val()
+            },
             processData: false,
             success: function (response) {
                 if (response.status == "success") {
@@ -64,7 +78,7 @@
     };
 
     validateFeedbackForm = function () {
-        $("#kc-feedbackForm-validatePart").validate({
+        $("#ecovat-feedbackForm").validate({
             rules: {
                 name: {
                     required: true,
@@ -111,6 +125,6 @@
             }
         });
 
-        return $("#kc-feedbackForm-validatePart").valid();
+        return $("#ecovat-feedbackForm").valid();
     };
 });

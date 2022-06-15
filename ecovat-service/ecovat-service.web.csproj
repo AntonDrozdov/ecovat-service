@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
     <RootNamespace>ecovat_service</RootNamespace>
     <UserSecretsId>e8d43951-cdb3-4ac9-acdc-ad28d68c369b</UserSecretsId>
   </PropertyGroup>
@@ -20,6 +20,10 @@
     <EmbeddedResource Include="wwwroot\lib\favicon.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ecova-service.businessLogic\ecovat-service.businessLogic.csproj" />
   </ItemGroup>
 
 </Project>
