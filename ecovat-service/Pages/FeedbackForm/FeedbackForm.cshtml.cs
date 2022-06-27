@@ -1,7 +1,8 @@
+using ecovat_service.businessLogic.Interfaces;
+using ecovat_service.businessLogic.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using ecovat_service.businessLogic.Models;
-using ecovat_service.businessLogic.Interfaces;
+using System.Threading.Tasks;
 
 namespace ecovat_service.Pages.FeedbackForm
 {
@@ -16,7 +17,7 @@ namespace ecovat_service.Pages.FeedbackForm
             _validationService = validationService;
         }
 
-        public IActionResult OnPost()
+        public async Task<IActionResult> OnPost()
         {
             var Name = Request.Form["Name"].ToString();
             var Email = Request.Form["Email"].ToString();
@@ -30,21 +31,22 @@ namespace ecovat_service.Pages.FeedbackForm
 
             var emailMessage = new Message
             {
-                Subject = "«‡ÔÓÒ Ò Ò‡ÈÚ‡ kc-construction.ru",
-                Body = $"Œ“: {Name}\r\n" +
-                       $"E-mail:{Email}\r\n" +
-                       $"“≈À≈‘ŒÕ:{Phone}\r\n" +
-                       $"—ŒŒ¡Ÿ≈Õ»≈:\r\n" +
+                Subject = "«‡ÔÓÒ Ò Ò‡ÈÚ‡ ecovat-service.ru",
+                Body = $"Œ“: {Name}\r\n\r\n" +
+                       $"E-mail:{Email}\r\n\r\n" +
+                       $"“≈À≈‘ŒÕ:{Phone}\r\n\r\n" +
+                       $"—ŒŒ¡Ÿ≈Õ»≈:\r\n\r\n" +
                        $"{Message}"
 
             };
 
-            if (_emailService.Send(emailMessage))
+            var res = await _emailService.Send(emailMessage);
+            if (res)
             {
                 return new JsonResult(new { status = "success" });
             }
-            return new JsonResult(new { status = "fail" });
 
+            return new JsonResult(new { status = "fail" });
         }
     }
 }   

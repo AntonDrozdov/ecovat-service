@@ -51,14 +51,14 @@
             processData: false,
             success: function (response) {
                 if (response.status == "success") {
-                    showPostFeedbackFormResult("formfeedbackInputs-successPost");
+                    showPostFeedbackFormResult("ecovat-formfeedbackInputs-successPost");
                 } else {
-                    showPostFeedbackFormResult("formfeedbackInputs-failPost");
+                    showPostFeedbackFormResult("ecovat-formfeedbackInputs-failPost");
                 }
 
             },
             error: function (response) {
-                showPostFeedbackFormResult("formfeedbackInputs-failPost");
+                showPostFeedbackFormResult("ecovat-formfeedbackInputs-failPost");
             }
         }).then(function (response) {
         });
@@ -66,7 +66,7 @@
     };
 
     showPostFeedbackFormResult = function (elementName) {
-        $("#formfeedbackInputs").hide();
+        $("#ecovat-formfeedbackInputs").hide();
 
         $("#" + elementName).show();
 

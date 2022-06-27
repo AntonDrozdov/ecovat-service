@@ -23,6 +23,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="MailKit" Version="3.3.0" />
+    <PackageReference Include="MimeKit" Version="3.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\ecova-service.businessLogic\ecovat-service.businessLogic.csproj" />
   </ItemGroup>
 

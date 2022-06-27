@@ -4,6 +4,6 @@ namespace ecovat_service.businessLogic.Interfaces
 {
     public interface IEmailService
     {
-        bool Send(Message message);
+        Task<bool> Send(Message message);
     }
 }

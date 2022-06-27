@@ -1,14 +1,16 @@
 ﻿using ecovat_service.businessLogic.Interfaces;
 using ecovat_service.businessLogic.Models;
-using System.Net.Mail;
 using Microsoft.Extensions.Options;
+using MailKit.Net.Smtp;
+using MailKit.Security;
+using MimeKit;
 
 namespace ecovat_service.businessLogic.Services
 {
     public class EmailService : IEmailService
     {
-        private ISmtpClientFactory _smtpClientFactory; 
-        private SmtpClient _smptClient { get; }
+        private ISmtpClientFactory _smtpClientFactory;
+        //private SmtpClient _smptClient { get; }
 
         private EmailServiceSettings _emailServiceSettings;
 
@@ -17,44 +19,37 @@ namespace ecovat_service.businessLogic.Services
             _emailServiceSettings = optionsMonitor.CurrentValue;
 
             _smtpClientFactory = smtpClientFactory;
-            _smptClient = _smtpClientFactory.CreateSmtpClient(_emailServiceSettings);
+            //_smptClient = _smtpClientFactory.CreateSmtpClient(_emailServiceSettings);
         }
 
-        public bool Send(Message message)
+        public async Task<bool> Send(Message message)
         {
+            try
             {
-                try
-                {
-                    using (MailMessage mailMessage = CreateMailMessage(message.Subject, message.Body))
-                    {
-                       _smptClient.Send(mailMessage);
-                    }
+                using var smtpClient = new SmtpClient();
+                await smtpClient.ConnectAsync(_emailServiceSettings.Server, Convert.ToInt32(_emailServiceSettings.Port), SecureSocketOptions.Auto);
+                
+                await smtpClient.AuthenticateAsync(_emailServiceSettings.Username, _emailServiceSettings.Password);
 
-                }
-                catch (Exception ex)
-                {
-                    return false;
-                }
+                var mimeMessage = new MimeMessage();
+                mimeMessage.From.Add(new MailboxAddress("SITE:ECOVAT-SERVICE.RU", _emailServiceSettings.Username));
 
-                return true;
+                foreach (var address in _emailServiceSettings.MailTo)
+                    mimeMessage.To.Add(new MailboxAddress(address, address));
+
+                var builder = new BodyBuilder { TextBody = message.Body };
+                mimeMessage.Body = builder.ToMessageBody();
+                mimeMessage.Subject = message.Subject;
+
+                await smtpClient.SendAsync(mimeMessage);
             }
-        }
-
-        private MailMessage CreateMailMessage(string subject, string body)
-        {
-            MailMessage mail = new MailMessage();
-
-            mail.From = new MailAddress("SITE@ECOVAT-SERVICE.RU");
-
-            foreach (var mailTo in _emailServiceSettings.MailTo)
+            catch (Exception ex)
             {
-                mail.To.Add(new MailAddress(mailTo));
+                var t = ex;
+                return false;
             }
 
-            mail.Subject = subject;
-            mail.Body = body;
-
-            return mail;
+            return true;
         }
-    }
+    } 
 }

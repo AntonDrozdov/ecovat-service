@@ -8,7 +8,7 @@
         </div>
       
         
-        <div id="ecovat-formfeedbackInputs" class="col-md-12 ">
+        <div id="ecovat-formfeedbackInputs" class="col-md-12 feedbackForm">
             <div class="modal-body">
 
             <form id="ecovat-feedbackForm">
@@ -46,7 +46,8 @@
                     <textarea    
                         class="form-control" 
                         id="ecovat-feedbackMessage"
-                        name="message"></textarea>
+                        name="message"
+                        rows="10"></textarea>
                 </div>
             </form>
             </div>
@@ -57,6 +58,44 @@
                 onclick="sendFeedbackForm()">
                 Отправить
             </button>
+            </div>
+        </div>
+
+        <div id="ecovat-formfeedbackInputs-successPost" class="col-md-12 feedbackForm" style="display: none">
+            <img src="~/images/FeedbackForm/galochka.png" />
+            <div class="lead with-text-indent">
+                <p>Спасибо за Ваше обращение.</p>
+                <p>Мы с Вами свяжемся.</p>
+                <br />
+                <p>
+                    Вы всегда можете связаться с нами по телефону  <h3>+7(931)004 86 70, +7(812)934 41 44</h3>
+                    или отправить нам сообщение по электронной почте: <h3>mail@ecovat-service.ru</h3>
+                </p>
+            </div>
+        </div>
+
+        <div id="ecovat-formfeedbackInputs-successPost" class="col-md-12 feedbackForm" style="display: none">
+            <img src="~/images/FeedbackForm/galochka.png" />
+            <div class="lead with-text-indent">
+                <p>Во время отправки Вашего сообщения произошла ошибка.</p>
+                <br />
+                <p>
+                    Вы всегда можете связаться с нами по телефону  <h3>+7(931)004 86 70, +7(812)934 41 44</h3>
+                    или отправить нам сообщение по электронной почте: <h3>mail@ecovat-service.ru</h3>
+                </p>
+            </div>
+        </div>
+
+        <div id="ecovat-formfeedbackInputs-failPost" class ="col-md-12 feedbackForm" style="display: none">
+            <img src="~/images/icons/krestik.png" />
+            <div class="kc-text">
+                <p>Во время отправки Вашего сообщения произошла ошибка.</p>
+                <br />
+                <p>
+                    Попробуйте связаться с нами по телефону: <h3>+7(931)004 86 70, +7(812)934 41 44</h3>
+                    или отправить нам сообщение по электронной почте: <h3>mail@ecovat-service.ru</h3>
+                </p>
+
             </div>
         </div>
 
