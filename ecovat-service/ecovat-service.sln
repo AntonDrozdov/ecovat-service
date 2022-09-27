@@ -5,7 +5,7 @@ VisualStudioVersion = 17.1.32414.318
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ecovat-service.web", "ecovat-service.web.csproj", "{6DE59763-B1BE-483B-B2AF-D0CB48EA837A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ecovat-service.businessLogic", "..\ecova-service.businessLogic\ecovat-service.businessLogic.csproj", "{99DB6E2F-4C68-4239-BE06-9EC8D9B4988E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ecovat-service.businessLogic", "..\ecova-service.businessLogic\ecovat-service.businessLogic.csproj", "{99DB6E2F-4C68-4239-BE06-9EC8D9B4988E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

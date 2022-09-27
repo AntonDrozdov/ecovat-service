@@ -26,9 +26,9 @@ namespace ecovat_service.businessLogic.Services
         {
             try
             {
-                using var smtpClient = new SmtpClient();
+               using var smtpClient = new SmtpClient();
                 await smtpClient.ConnectAsync(_emailServiceSettings.Server, Convert.ToInt32(_emailServiceSettings.Port), SecureSocketOptions.Auto);
-                
+
                 await smtpClient.AuthenticateAsync(_emailServiceSettings.Username, _emailServiceSettings.Password);
 
                 var mimeMessage = new MimeMessage();
@@ -45,7 +45,6 @@ namespace ecovat_service.businessLogic.Services
             }
             catch (Exception ex)
             {
-                var t = ex;
                 return false;
             }
 

@@ -12,12 +12,12 @@ namespace ecovat_service.businessLogic.Services
             string pattern = "[.\\-_a-z0-9]+@([a-z0-9][\\-a-z0-9]+\\.)+[a-z]{2,6}";
             var emailValid = Regex.Match(email, pattern, RegexOptions.IgnoreCase).Success;
 
-            pattern = "^[0-9]{3,15}$";
-            var telephonValid = Regex.Match(phone, pattern, RegexOptions.IgnoreCase).Success;
+            //pattern = "^[0-9]{3,15}$";
+            //var telephonValid = Regex.Match(phone, pattern, RegexOptions.IgnoreCase).Success;
 
             var messageValid = message.Length >= 10 && message.Length <= 3000;
 
-            return nameValid && emailValid && telephonValid && messageValid;
+            return nameValid && emailValid && messageValid;
         }
     }
 }

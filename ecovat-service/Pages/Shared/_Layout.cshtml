@@ -50,6 +50,7 @@
 </head>
 <body>
     @await Component.InvokeAsync("FeedbackForm")
+    @await Component.InvokeAsync("ContactsForm")
 
     <div id="testModal" style="display:none">
         <span>testModal</span>
@@ -76,8 +77,8 @@
                     </button>*@
                     <button class="navbar-toggler"
                         type="button"
-                        data-bs-toggle=""
-                        data-bs-target=""
+                        data-bs-toggle="modal"
+                        data-bs-target="#contactsForm"
                         aria-controls="navbarPhoneContacts"
                         aria-expanded="false"
                         aria-label="Toggle navigation">
@@ -115,6 +116,7 @@
                         <div class="header-contacts-icon-block">
                             <span class="navbar-toggler-icon header-contacts-icon without-backgroundimage ">
                                 <i class="fa-solid fa-phone font-size-larger"></i>
+                                <i class="fa-solid fa-envelope font-size-larger"></i>
                             </span>
                         </div>
                         <div class="header-contacts">
@@ -133,7 +135,7 @@
                                     <div class=" header-contacts-btn-icon"> 
                                         <i class="fa fa-question-circle-o"></i>
                                     </div> 
-                                    <div class="header-contacts-btn-text">Задайте свой вопрос</div>  
+                                    <div class="header-contacts-btn-text">Задайте вопрос</div>  
                             </button> 
                         </div>
                         @*

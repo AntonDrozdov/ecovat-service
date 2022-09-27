@@ -1,10 +1,17 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
+
+.header-contacts-wrapper {
+    align-items:center;
+    display: flex !important;
+    flex-direction: row !important;
+}
+
 .header-contacts {
     /*    border: 3px solid #6c757d;
     border-radius: 5px;*/
-    padding: 1em;
+    padding: 1em 2em 1em 1em;
     display: flex;
     flex-direction: column;
 }
@@ -15,23 +22,57 @@ for details on configuring this project to bundle and minify static web assets. 
 }
 
 .header-contacts .header-contacts-mail {
-    padding-top: 10px;
     text-align: center;
     font-weight: 600;
 }
+
+.header-contacts-icon-block {
+    display:table;
+}
+.header-contacts-icon {
+    text-align: end;
+    font-size: xx-large;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.header-contacts-btn-icon {
+    font-size: 32px;
+    margin: 0px 6px 0px 0px;
+}
+.header-contacts-btn-text {
+    margin: 10px 0px 0px 0px;
+}
+
+.header-contacts-btn {
+    padding: 0px 6px 0px 6px;
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
+    font-weight: 600;
+    font-size: larger;
+    color: #5a5a5a !important;
+    background-color: #ffffff !important;
+    border: 3px solid #60c53f !important;
+}
+
 
 .navbar-brand {
     margin-left: 0rem;
 }
 
 .navbar-brand img {
-    max-width: 200px;
+    max-width: 370px;
 }
 
 a.navbar-brand {
     white-space: normal;
     text-align: center;
     word-break: break-all;
+}
+
+.navbar-toggler-icon > i {
+    padding-top: 5px;
 }
 
 .footer-data {
@@ -74,11 +115,48 @@ a.navbar-brand {
     text-align:center;
 }
 
+.modal-header {
+    border-bottom: 1px solid #60c53f !important;
+}
+
+.modal-header .btn-close {
+    padding: 0.5rem 0.5rem;
+    margin: -0.5rem 1rem -0.5rem auto;
+}
+
+.modal-header img {
+    max-width:210px;
+}
+
+.feedback-confirm-btn {
+    padding: 0px 6px 0px 6px;
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
+    font-weight: 600;
+    font-size: larger;
+    color: #5a5a5a !important;
+    background-color: #ffffff !important;
+    border: 1px solid #60c53f !important;
+}
+
+.feedbackForm-results {
+    text-align: center;
+}
+
+.feedbackForm-results .fail-image{
+    max-width:100px;
+}
+
+.feedbackForm .error {
+    color: crimson;
+}
+
 .advatages {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items:center;
+    align-items: center;
 }
 
 .advatages h1 {
@@ -96,6 +174,28 @@ a.navbar-brand {
 
 .font-size-larger {
     font-size: x-large;
+}
+.font-size-xlarger {
+    font-size: xx-large;
+}
+
+@media (max-width: 1024px) {
+    .font-size-larger {
+        font-size: larger;
+    }
+
+    .navbar-brand img {
+        max-width: 270px;
+    }
+}
+
+@media (max-width: 768px) {
+    .font-size-larger {
+        font-size: unset;
+    }
+    .navbar-brand img {
+        max-width: 170px;
+    }
 }
 
 a {

@@ -1,9 +1,8 @@
-﻿<div class="modal fade" id="feedbackForm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+﻿<div class="modal fade modalFeedback" id="feedbackForm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
-    <div class="modal-content">
-      
+    <div class="modal-content">      
         <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+            <img src="~/images/logos/web_logo_top.png" alt="Эковат-Сервис"/>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
       
@@ -33,7 +32,7 @@
                 </div>
                 <!--EMAIL-->
                 <div class="mb-3">
-                    <label for="email" class="col-form-label">Укажите Ваш EMail:</label>
+                    <label for="email" class="col-form-label">EMail:</label>
                     <input 
                         type="text" 
                         class="form-control" 
@@ -47,58 +46,71 @@
                         class="form-control" 
                         id="ecovat-feedbackMessage"
                         name="message"
-                        rows="10"></textarea>
+                        rows="5"></textarea>
                 </div>
             </form>
             </div>
 
             <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="submit" class="btn btn-primary"
+            @*<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>*@
+            <button type="submit" class="btn btn-primary feedback-confirm-btn"
                 onclick="sendFeedbackForm()">
                 Отправить
             </button>
             </div>
         </div>
 
-        <div id="ecovat-formfeedbackInputs-successPost" class="col-md-12 feedbackForm" style="display: none">
-            <img src="~/images/FeedbackForm/galochka.png" />
-            <div class="lead with-text-indent">
-                <p>Спасибо за Ваше обращение.</p>
-                <p>Мы с Вами свяжемся.</p>
-                <br />
-                <p>
-                    Вы всегда можете связаться с нами по телефону  <h3>+7(931)004 86 70, +7(812)934 41 44</h3>
-                    или отправить нам сообщение по электронной почте: <h3>mail@ecovat-service.ru</h3>
-                </p>
+        <div id="ecovat-formfeedbackInputs-successPost" class="col-md-12 feedbackForm-results" style="display: none">
+            <br />
+            <div>
+                <img src="~/images/FeedbackForm/galochka.png" />
+                <div class="lead with-text-indent">
+                    <p>Спасибо за Ваше обращение.</p>
+                    <p>Мы с Вами свяжемся.</p>
+                </div>
             </div>
+            <br />
+            <div>
+                <div class="lead with-text-indent">
+                    <p>Вы всегда можете позвонить нам по телефону:</p>
+                    <div class="header-contacts-tel font-size-xlarger">+7(931)004 86 70</div>
+                    <div class="header-contacts-tel font-size-xlarger">+7(812)934 41 44</div>
+                </div>
+                <br />
+                <div class="lead with-text-indent">
+                    <p>или отправить нам сообщение по электронной почте:</p>
+                    <div class="header-contacts-tel font-size-xlarger">mail@ecovat-service.ru</div>
+                </div>
+            </div>
+            <br />
         </div>
 
-        <div id="ecovat-formfeedbackInputs-successPost" class="col-md-12 feedbackForm" style="display: none">
-            <img src="~/images/FeedbackForm/galochka.png" />
-            <div class="lead with-text-indent">
-                <p>Во время отправки Вашего сообщения произошла ошибка.</p>
+
+        <div id="ecovat-formfeedbackInputs-failPost" class="col-md-12 feedbackForm-results" style="display: none">
+            <br />
+            <div>
+                <img src="~/images/FeedbackForm/krestik.png" class="fail-image"/>
                 <br />
-                <p>
-                    Вы всегда можете связаться с нами по телефону  <h3>+7(931)004 86 70, +7(812)934 41 44</h3>
-                    или отправить нам сообщение по электронной почте: <h3>mail@ecovat-service.ru</h3>
-                </p>
-            </div>
-        </div>
-
-        <div id="ecovat-formfeedbackInputs-failPost" class ="col-md-12 feedbackForm" style="display: none">
-            <img src="~/images/icons/krestik.png" />
-            <div class="kc-text">
-                <p>Во время отправки Вашего сообщения произошла ошибка.</p>
                 <br />
-                <p>
-                    Попробуйте связаться с нами по телефону: <h3>+7(931)004 86 70, +7(812)934 41 44</h3>
-                    или отправить нам сообщение по электронной почте: <h3>mail@ecovat-service.ru</h3>
-                </p>
-
+                <div class="lead with-text-indent">
+                    <p>Во время отправки Вашего сообщения произошла ошибка.</p>
+                </div>
             </div>
+            <br />
+            <div>
+                <div class="lead with-text-indent">
+                    <p>Попробуйте связаться с нами по телефону:</p>
+                    <div class="header-contacts-tel font-size-xlarger">+7(931)004 86 70</div>
+                    <div class="header-contacts-tel font-size-xlarger">+7(812)934 41 44</div>
+                </div>
+                <br />
+                <div class="lead with-text-indent">
+                    <p>или отправить нам сообщение по электронной почте:</p>
+                    <div class="header-contacts-tel font-size-xlarger">mail@ecovat-service.ru</div>
+                </div>
+            </div>
+            <br />
         </div>
-
     </div>
   </div>
 </div>

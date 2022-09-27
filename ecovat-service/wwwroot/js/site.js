@@ -4,8 +4,14 @@
     //});
 
     $('#askQuestionIcon').on('click', function () {
-        //showFeedbackForm();
+        showFeedbackForm();
         //$('#exampleModal').modal({ show:'true', backdrop: 'static', keyboard: false });
+    });
+
+    var formfeedback = document.getElementById('feedbackForm');
+
+    formfeedback.addEventListener('shown.bs.modal', function () {
+        showFeedbackForm();
     });
 
     showFeedbackForm = function () {
@@ -72,7 +78,7 @@
 
         setTimeout(function () {
             $("#" + elementName).hide();
-            $("#feedbackCloseBtn").click();
+            $(".btn-close").click();
         },
             5000);
     };
@@ -89,9 +95,8 @@
                     email: true
                 },
                 phone: {
-                    required: true,
-                    digits: true,
-                    minlength: 3,
+                    required: true,                    
+                    minlength: 5,
                     maxlength: 20
                 },
                 message: {
@@ -113,7 +118,7 @@
                 phone: {
                     required: "*Введите номер телефона",
                     digits: "*Допустимы только цифры",
-                    minlength: "*Не менее 3х символов",
+                    minlength: "*Не менее 5х символов",
                     maxlength: "*Не более 20ти символов"
                 },
                 message: {
